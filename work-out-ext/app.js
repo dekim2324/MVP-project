@@ -165,6 +165,8 @@ $(function() {
     }
 
     $('.comments').val('')
+    $("form input[type='text'").val('');
+    $("form input[type='number'").val('');
 
     create(key, value)
     displayData2()
@@ -172,5 +174,7 @@ $(function() {
 
   })
 
+  $('i').css('cursor', 'pointer')
+  $('.subs').css('cursor', 'pointer')
 })
 
