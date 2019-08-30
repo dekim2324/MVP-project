@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Workout App</title>
+  <script
+          src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4ff72e95e0.js"></script>
+</head>
+<body>
+
+  <h1>Your Training Tracker</h1>
+
+
+
+<div class="very-outer">
+    <div class="one">
+      <div class="reminder-box">
+        <div>-Reminder-</div>
+        <p>Your Next Training is: </p>
+        <div class="date-here"></div>
+      </div>
+    </div>
+
+  <div class="two">
+  <div class="container-outer">
+
+      <div class="container-inner">
+
+          <div class="item first">
+              <p class="top">Today's Training</p>
+              <div class="top-container">
+                  <div class="train-select">Training-Type:
+                      <select class="t-type">
+                          <option value="">Select Training</option>
+                          <option value="Cardio">Cardio</option>
+                          <option value="Back">Back</option>
+                          <option value="Chest">Chest</option>
+                          <option value="Legs">Legs</option>
+                          <option value="Arms">Arms</option>
+                        </select>
+                  </div>
+                  <div class="date-select">Date:
+                    <input type='date' class="date-input">
+                  </div>
+              </div>
+          </div>
+
+          <div class="item second">
+            <div class="left-form">
+                <form>
+                  <input class="work-text" type='text' placeholder="Add Your Workout">
+                  <input class="work-num" type='number' placeholder="value">
+                  <select class="work-unit" >
+                      <option value="">Unit</option>
+                      <option value="miles">miles</option>
+                      <option value="lbs">lbs</option>
+                      <option value="kgs">kgs</option>
+                      <option value="seconds">seconds</option>
+                      <option value="minutes">minutes</option>
+                      <option value="hours">hours</option>
+                      <option value="reps">reps</option>
+                    </select>
+                </form>
+                <ul>
+                </ul>
+            </div>
+          </div>
+
+
+          <div class="item third">
+            <div class="radios">
+               <div>Your Next Work-Out:</div>
+                <div class="radio">
+                    <input type='radio' value='Cardio' name="radAnswer" checked> Cardio
+                    <input type='radio' value='Back' name="radAnswer"> Back
+                    <input type='radio' value='Chest' name="radAnswer"> Chest
+                    <input type='radio' value='Legs' name="radAnswer"> Legs
+                    <input type='radio' value='Arms' name="radAnswer" > Arms
+                </div>
+            </div>
+          </div>
+
+          <div class="item fourth">
+              <div class="comment-sec">
+                  <span>Comments: </span>
+                  <textarea
+                    name='comments'
+                    rows='4'
+                    class="comments"
+                    placeholder=" add more detail here"
+                    ></textarea>
+              </div>
+              <div class="submits">
+                  <input class='subs' type="submit">
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+
+  <div class="three">
+    <div class="third-box">
+      <div class="hist0">Workout History - </div>
+      <div class="add-here"></div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
